@@ -1,0 +1,28 @@
+[package]
+description = "SWC plugin for https://www.npmjs.com/package/babel-plugin-transform-imports"
+
+name         = "swc-plugin-import-lcap"
+edition      = "2021"
+rust-version = "1.70"
+version      = "0.0.1"
+
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+swc_core           = { version = "23.2.0", features = ["ecma_plugin_transform"] }
+swc_common         = { version = "9.0.0", features = ["concurrent"] }
+swc_ecma_ast       = { version = "9.0.0" }
+swc_ecma_utils     = { version = "13.0.0" }
+swc_ecma_visit     = { version = "9.0.0" }
+swc_plugin_macro   = { version = "1.1.0" }
+swc_atoms      = { version = "5.0.0" }
+swc_cached     = { version = "2.0.0" }
+
+convert_case   = { version = "0.6.0" }
+handlebars     = { version = "5.1.2" }
+once_cell      = { version = "1.19.0" }
+regex          = { version = "1.10.4" }
+serde          = { version = "1.0.203", features = ["rc"] }
+serde_json         = "1.0.117"

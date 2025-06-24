@@ -1,0 +1,18 @@
+{
+  "name": "@lcap/swc-plugin-import",
+  "version": "0.0.1",
+  "main": "swc_plugin_import_lcap.wasm",
+  "scripts": {
+    "prepack": "pnpm run build:debug",
+    "build": "cargo build --release --target wasm32-wasip1 && cp ./target/wasm32-wasip1/release/swc_plugin_import_lcap.wasm .",
+    "build:debug": "cargo build --target wasm32-wasip1 && cp ./target/wasm32-wasip1/debug/swc_plugin_import_lcap.wasm .",
+    "test": "pnpm run build:debug && vitest run --testTimeout=0"
+  },
+  "files": [
+    "swc_plugin_import_lcap.wasm"
+  ],
+  "keywords": [],
+  "dependencies": {
+    
+  }
+}
