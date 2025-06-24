@@ -75,11 +75,14 @@ impl Rewriter<'_> {
         let new_path = match member_config {
             Some(ModuleConfig { src, is_default }) => {
                 // package/{{src}}
-                let result = format!("{}/{}/{}", package, self.config.esDir, src);
-
-                result
+                format!("{}/{}/{}", package, self.config.esDir, src)
             }
-            None => format!("{}", package),
+            None => format!(
+                "{}/{}/{}",
+                package,
+                self.config.esDir,
+                name_str.unwrap_or_default()
+            ),
         };
 
         // new_path可能包含双斜杠，需要替换为单斜杠
