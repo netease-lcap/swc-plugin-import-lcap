@@ -1,5 +1,5 @@
 [package]
-description = "SWC plugin for https://www.npmjs.com/package/babel-plugin-transform-imports"
+description = "SWC plugin for LCAP"
 
 name         = "swc-plugin-import-lcap"
 edition      = "2021"
