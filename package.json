@@ -6,13 +6,16 @@
     "prepack": "pnpm run build:debug",
     "build": "cargo build --release --target wasm32-wasip1 && cp ./target/wasm32-wasip1/release/swc_plugin_import_lcap.wasm .",
     "build:debug": "cargo build --target wasm32-wasip1 && cp ./target/wasm32-wasip1/debug/swc_plugin_import_lcap.wasm .",
-    "test": "pnpm run build:debug && vitest run --testTimeout=0"
+    "pretest": "pnpm run build:debug",
+    "test": "vitest"
   },
   "files": [
     "swc_plugin_import_lcap.wasm"
   ],
   "keywords": [],
-  "dependencies": {
-    
+  "devDependencies": {
+    "@swc/core": "~1.11.25",
+    "@types/node": "^20.6.2",
+    "vitest": "^3.1.1"
   }
 }

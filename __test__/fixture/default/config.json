@@ -1,0 +1,15 @@
+{
+  "@lcap/element-plus": {
+    "esDir": "es",
+    "modules": {
+      "ElButton": {
+        "src": "components/button/index",
+        "isDefault": false
+      },
+      "ElInput": {
+        "src": "components/input/index",
+        "isDefault": true
+      }
+    }
+  }
+}
