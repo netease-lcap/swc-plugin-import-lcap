@@ -4,6 +4,12 @@
 
 处理低代码组件库的按需引入，当前只处理ImportSpecifier::Named，例如：import { A } from 'package' 会转换为 import A from 'package/{{es}}/{{file}}'
 
+## 构建
+
+```sh
+npm pack
+```
+
 ## 使用
 
 ```js
