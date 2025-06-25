@@ -29,7 +29,7 @@ pub struct ModuleConfig {
 #[derive(Clone, Debug, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct PackageConfig {
-    pub esDir: String,
+    pub es_dir: String,
     pub modules: HashMap<String, ModuleConfig>,
 }
 
@@ -75,12 +75,12 @@ impl Rewriter<'_> {
         let new_path = match member_config {
             Some(ModuleConfig { src, is_default }) => {
                 // package/{{src}}
-                format!("{}/{}/{}", package, self.config.esDir, src)
+                format!("{}/{}/{}", package, self.config.es_dir, src)
             }
             None => format!(
                 "{}/{}/{}",
                 package,
-                self.config.esDir,
+                self.config.es_dir,
                 name_str.unwrap_or_default()
             ),
         };
