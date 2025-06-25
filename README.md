@@ -1,4 +1,5 @@
 # SWC插件
+[![Test](https://github.com/netease-lcap/swc-plugin-import-lcap/actions/workflows/test.yml/badge.svg)](https://github.com/netease-lcap/swc-plugin-import-lcap/actions/workflows/test.yml)
 
 ## 作用
 
