@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "swc_plugin_import_lcap.wasm",
   "scripts": {
-    "prepack": "pnpm run build:debug",
+    "prepack": "pnpm run build",
     "build": "cargo build --release --target wasm32-wasip1 && cp ./target/wasm32-wasip1/release/swc_plugin_import_lcap.wasm .",
     "build:debug": "cargo build --target wasm32-wasip1 && cp ./target/wasm32-wasip1/debug/swc_plugin_import_lcap.wasm .",
     "pretest": "pnpm run build:debug",

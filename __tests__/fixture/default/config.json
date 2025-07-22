@@ -2,13 +2,1057 @@
   "@lcap/element-plus": {
     "esDir": "es",
     "modules": {
+      "ConfigProvider": {
+        "src": "components/el-config-provider/index",
+        "isDefault": false
+      },
+      "install": {
+        "src": "install",
+        "isDefault": false
+      },
+      "categoryStyles": {
+        "src": "utils",
+        "isDefault": false
+      },
+      "setElStyle": {
+        "src": "utils",
+        "isDefault": false
+      },
+      "transformKeys": {
+        "src": "utils",
+        "isDefault": false
+      },
+      "ElAbsoluteLayout": {
+        "src": "components/el-absolute-layout/index",
+        "isDefault": false
+      },
+      "ElAbsoluteLayoutRegister": {
+        "src": "components/el-absolute-layout/index",
+        "isDefault": false
+      },
+      "ElAffix": {
+        "src": "components/el-affix/index",
+        "isDefault": false
+      },
+      "ElAffixPlus": {
+        "src": "components/el-affix/index",
+        "isDefault": false
+      },
+      "ElAffixRegister": {
+        "src": "components/el-affix/index",
+        "isDefault": false
+      },
+      "ElAlert": {
+        "src": "components/el-alert/index",
+        "isDefault": false
+      },
+      "ElAlertPlus": {
+        "src": "components/el-alert/index",
+        "isDefault": false
+      },
+      "ElAlertRegister": {
+        "src": "components/el-alert/index",
+        "isDefault": false
+      },
+      "ElAnchor": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElAnchorItem": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElAnchorLink": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElAnchorLinkPlus": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElAnchorLinkRegister": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElAnchorPlus": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElAnchorRegister": {
+        "src": "components/el-anchor/index",
+        "isDefault": false
+      },
+      "ElBacktop": {
+        "src": "components/el-backtop/index",
+        "isDefault": false
+      },
+      "ElBacktopDesigner": {
+        "src": "components/el-backtop/index",
+        "isDefault": false
+      },
+      "ElBacktopPlus": {
+        "src": "components/el-backtop/index",
+        "isDefault": false
+      },
+      "ElBacktopRegister": {
+        "src": "components/el-backtop/index",
+        "isDefault": false
+      },
+      "ElBadge": {
+        "src": "components/el-badge/index",
+        "isDefault": false
+      },
+      "ElBadgePlus": {
+        "src": "components/el-badge/index",
+        "isDefault": false
+      },
+      "ElBadgeRegister": {
+        "src": "components/el-badge/index",
+        "isDefault": false
+      },
+      "ElBreadcrumb": {
+        "src": "components/el-breadcrumb/index",
+        "isDefault": false
+      },
+      "ElBreadcrumbItem": {
+        "src": "components/el-breadcrumb/index",
+        "isDefault": false
+      },
+      "ElBreadcrumbItemRegister": {
+        "src": "components/el-breadcrumb/index",
+        "isDefault": false
+      },
+      "ElBreadcrumbPlus": {
+        "src": "components/el-breadcrumb/index",
+        "isDefault": false
+      },
+      "ElBreadcrumbRegister": {
+        "src": "components/el-breadcrumb/index",
+        "isDefault": false
+      },
       "ElButton": {
-        "src": "components/button/index",
+        "src": "components/el-button/index",
+        "isDefault": false
+      },
+      "ElButtonPlus": {
+        "src": "components/el-button/index",
+        "isDefault": false
+      },
+      "ElButtonRegister": {
+        "src": "components/el-button/index",
+        "isDefault": false
+      },
+      "ElCalendar": {
+        "src": "components/el-calendar/index",
+        "isDefault": false
+      },
+      "ElCalendarPlus": {
+        "src": "components/el-calendar/index",
+        "isDefault": false
+      },
+      "ElCalendarRegister": {
+        "src": "components/el-calendar/index",
+        "isDefault": false
+      },
+      "ElCard": {
+        "src": "components/el-card/index",
+        "isDefault": false
+      },
+      "ElCardPlus": {
+        "src": "components/el-card/index",
+        "isDefault": false
+      },
+      "ElCardRegister": {
+        "src": "components/el-card/index",
+        "isDefault": false
+      },
+      "ElCarousel": {
+        "src": "components/el-carousel/index",
+        "isDefault": false
+      },
+      "ElCarouselItem": {
+        "src": "components/el-carousel/index",
+        "isDefault": false
+      },
+      "ElCarouselItemPlus": {
+        "src": "components/el-carousel/index",
+        "isDefault": false
+      },
+      "ElCarouselItemRegister": {
+        "src": "components/el-carousel/index",
+        "isDefault": false
+      },
+      "ElCarouselPlus": {
+        "src": "components/el-carousel/index",
+        "isDefault": false
+      },
+      "ElCarouselRegister": {
+        "src": "components/el-carousel/index",
+        "isDefault": false
+      },
+      "ElCascader": {
+        "src": "components/el-cascader/index",
+        "isDefault": false
+      },
+      "ElCascaderPlus": {
+        "src": "components/el-cascader/index",
+        "isDefault": false
+      },
+      "ElCascaderRegister": {
+        "src": "components/el-cascader/index",
+        "isDefault": false
+      },
+      "ElFormCascader": {
+        "src": "components/el-cascader/index",
+        "isDefault": false
+      },
+      "ElCheckbox": {
+        "src": "components/el-checkbox-group/index",
+        "isDefault": false
+      },
+      "ElCheckboxGroup": {
+        "src": "components/el-checkbox-group/index",
+        "isDefault": false
+      },
+      "ElCheckboxGroupPlus": {
+        "src": "components/el-checkbox-group/index",
+        "isDefault": false
+      },
+      "ElCheckboxRegister": {
+        "src": "components/el-checkbox-group/index",
+        "isDefault": false
+      },
+      "ElFormCheckboxGroup": {
+        "src": "components/el-checkbox-group/index",
+        "isDefault": false
+      },
+      "ElCollapse": {
+        "src": "components/el-collapse/index",
+        "isDefault": false
+      },
+      "ElCollapseItem": {
+        "src": "components/el-collapse/index",
+        "isDefault": false
+      },
+      "ElCollapseItemPlus": {
+        "src": "components/el-collapse/index",
+        "isDefault": false
+      },
+      "ElCollapseItemRegister": {
+        "src": "components/el-collapse/index",
+        "isDefault": false
+      },
+      "ElCollapsePlus": {
+        "src": "components/el-collapse/index",
+        "isDefault": false
+      },
+      "ElCollapseRegister": {
+        "src": "components/el-collapse/index",
+        "isDefault": false
+      },
+      "ElDatePicker": {
+        "src": "components/el-date-picker/index",
+        "isDefault": false
+      },
+      "ElDatePickerPlus": {
+        "src": "components/el-date-picker/index",
+        "isDefault": false
+      },
+      "ElDatePickerRegister": {
+        "src": "components/el-date-picker/index",
+        "isDefault": false
+      },
+      "ElFormDatePicker": {
+        "src": "components/el-date-picker/index",
+        "isDefault": false
+      },
+      "ElDescriptions": {
+        "src": "components/el-descriptions/index",
+        "isDefault": false
+      },
+      "ElDescriptionsItem": {
+        "src": "components/el-descriptions/index",
+        "isDefault": false
+      },
+      "ElDescriptionsPlus": {
+        "src": "components/el-descriptions/index",
+        "isDefault": false
+      },
+      "ElDescriptionsRegister": {
+        "src": "components/el-descriptions/index",
+        "isDefault": false
+      },
+      "ElDialog": {
+        "src": "components/el-dialog/index",
+        "isDefault": false
+      },
+      "ElDialogPlus": {
+        "src": "components/el-dialog/index",
+        "isDefault": false
+      },
+      "ElDialogRegister": {
+        "src": "components/el-dialog/index",
+        "isDefault": false
+      },
+      "ElDivider": {
+        "src": "components/el-divider/index",
+        "isDefault": false
+      },
+      "ElDividerPlus": {
+        "src": "components/el-divider/index",
+        "isDefault": false
+      },
+      "ElDividerRegister": {
+        "src": "components/el-divider/index",
+        "isDefault": false
+      },
+      "ElDrawer": {
+        "src": "components/el-drawer/index",
+        "isDefault": false
+      },
+      "ElDrawerPlus": {
+        "src": "components/el-drawer/index",
+        "isDefault": false
+      },
+      "ElDrawerRegister": {
+        "src": "components/el-drawer/index",
+        "isDefault": false
+      },
+      "ElDropdown": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownItem": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownItemPlus": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownItemRegister": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownMenu": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownMenuPlus": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownPlus": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElDropdownRegister": {
+        "src": "components/el-dropdown/index",
+        "isDefault": false
+      },
+      "ElFlex": {
+        "src": "components/el-flex/index",
+        "isDefault": false
+      },
+      "ElFlexRegister": {
+        "src": "components/el-flex/index",
+        "isDefault": false
+      },
+      "Flex": {
+        "src": "components/el-flex/index",
+        "isDefault": false
+      },
+      "ElForm": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElFormItem": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElFormItemPlus": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElFormItemWrap": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElFormItemWrapRegister": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElFormPlus": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElFormRegister": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "withFormItem": {
+        "src": "components/el-form/index",
+        "isDefault": false
+      },
+      "ElIcon": {
+        "src": "components/el-icon/index",
+        "isDefault": false
+      },
+      "ElIconRegister": {
+        "src": "components/el-icon/index",
+        "isDefault": false
+      },
+      "Icon": {
+        "src": "components/el-icon/index",
+        "isDefault": false
+      },
+      "ElIframe": {
+        "src": "components/el-iframe/index",
+        "isDefault": false
+      },
+      "ElImage": {
+        "src": "components/el-image/index",
+        "isDefault": false
+      },
+      "ElImagePlus": {
+        "src": "components/el-image/index",
+        "isDefault": false
+      },
+      "ElImageRegister": {
+        "src": "components/el-image/index",
+        "isDefault": false
+      },
+      "ElImageViewer": {
+        "src": "components/el-image/index",
+        "isDefault": false
+      },
+      "ElImageViewerPlus": {
+        "src": "components/el-image/index",
+        "isDefault": false
+      },
+      "ElImageViewerRegister": {
+        "src": "components/el-image/index",
+        "isDefault": false
+      },
+      "ElFormInput": {
+        "src": "components/el-input/index",
         "isDefault": false
       },
       "ElInput": {
-        "src": "components/input/index",
-        "isDefault": true
+        "src": "components/el-input/index",
+        "isDefault": false
+      },
+      "ElInputPlus": {
+        "src": "components/el-input/index",
+        "isDefault": false
+      },
+      "ElInputRegister": {
+        "src": "components/el-input/index",
+        "isDefault": false
+      },
+      "ElFormInputNumber": {
+        "src": "components/el-input-number/index",
+        "isDefault": false
+      },
+      "ElInputNumber": {
+        "src": "components/el-input-number/index",
+        "isDefault": false
+      },
+      "ElInputNumberPlus": {
+        "src": "components/el-input-number/index",
+        "isDefault": false
+      },
+      "ElInputNumberRegister": {
+        "src": "components/el-input-number/index",
+        "isDefault": false
+      },
+      "ElFormInputTag": {
+        "src": "components/el-input-tag/index",
+        "isDefault": false
+      },
+      "ElInputTag": {
+        "src": "components/el-input-tag/index",
+        "isDefault": false
+      },
+      "ElInputTagPlus": {
+        "src": "components/el-input-tag/index",
+        "isDefault": false
+      },
+      "ElInputTagRegister": {
+        "src": "components/el-input-tag/index",
+        "isDefault": false
+      },
+      "ElLink": {
+        "src": "components/el-link/index",
+        "isDefault": false
+      },
+      "ElLinkPlus": {
+        "src": "components/el-link/index",
+        "isDefault": false
+      },
+      "ElLinkRegister": {
+        "src": "components/el-link/index",
+        "isDefault": false
+      },
+      "ElListComponents": {
+        "src": "components/el-list-components/index",
+        "isDefault": false
+      },
+      "ElListComponentsRegister": {
+        "src": "components/el-list-components/index",
+        "isDefault": false
+      },
+      "ElLoading": {
+        "src": "components/el-loading/index",
+        "isDefault": false
+      },
+      "ElLoadingRegister": {
+        "src": "components/el-loading/index",
+        "isDefault": false
+      },
+      "ElFormMention": {
+        "src": "components/el-mention/index",
+        "isDefault": false
+      },
+      "ElMention": {
+        "src": "components/el-mention/index",
+        "isDefault": false
+      },
+      "ElMentionPlus": {
+        "src": "components/el-mention/index",
+        "isDefault": false
+      },
+      "ElMentionRegister": {
+        "src": "components/el-mention/index",
+        "isDefault": false
+      },
+      "ElMenu": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuItem": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuItemGroup": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuItemGroupPlus": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuItemGroupRegister": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuItemPlus": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuItemRegister": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuPlus": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMenuRegister": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElSubMenu": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElSubMenuPlus": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElSubMenuRegister": {
+        "src": "components/el-menu/index",
+        "isDefault": false
+      },
+      "ElMessage": {
+        "src": "components/el-message/index",
+        "isDefault": false
+      },
+      "ElMessageDesigner": {
+        "src": "components/el-message/index",
+        "isDefault": false
+      },
+      "ElMessageRegister": {
+        "src": "components/el-message/index",
+        "isDefault": false
+      },
+      "ElMessageBox": {
+        "src": "components/el-message-box/index",
+        "isDefault": false
+      },
+      "ElMessageBoxDesigner": {
+        "src": "components/el-message-box/index",
+        "isDefault": false
+      },
+      "ElMessageBoxRegister": {
+        "src": "components/el-message-box/index",
+        "isDefault": false
+      },
+      "ElMultiLayout": {
+        "src": "components/el-multi-layout/index",
+        "isDefault": false
+      },
+      "ElMultiLayoutItem": {
+        "src": "components/el-multi-layout/index",
+        "isDefault": false
+      },
+      "ElMultiLayoutRegister": {
+        "src": "components/el-multi-layout/index",
+        "isDefault": false
+      },
+      "ElNotification": {
+        "src": "components/el-notification/index",
+        "isDefault": false
+      },
+      "ElNotificationDesigner": {
+        "src": "components/el-notification/index",
+        "isDefault": false
+      },
+      "ElNotificationRegister": {
+        "src": "components/el-notification/index",
+        "isDefault": false
+      },
+      "ElPageHeader": {
+        "src": "components/el-page-header/index",
+        "isDefault": false
+      },
+      "ElPageHeaderPlus": {
+        "src": "components/el-page-header/index",
+        "isDefault": false
+      },
+      "ElPageHeaderRegister": {
+        "src": "components/el-page-header/index",
+        "isDefault": false
+      },
+      "ElPagination": {
+        "src": "components/el-pagination/index",
+        "isDefault": false
+      },
+      "ElPaginationPlus": {
+        "src": "components/el-pagination/index",
+        "isDefault": false
+      },
+      "ElPaginationRegister": {
+        "src": "components/el-pagination/index",
+        "isDefault": false
+      },
+      "ElPopover": {
+        "src": "components/el-popover/index",
+        "isDefault": false
+      },
+      "ElPopoverPlus": {
+        "src": "components/el-popover/index",
+        "isDefault": false
+      },
+      "ElPopoverRegister": {
+        "src": "components/el-popover/index",
+        "isDefault": false
+      },
+      "ElProgress": {
+        "src": "components/el-progress/index",
+        "isDefault": false
+      },
+      "ElProgressPlus": {
+        "src": "components/el-progress/index",
+        "isDefault": false
+      },
+      "ElProgressRegister": {
+        "src": "components/el-progress/index",
+        "isDefault": false
+      },
+      "ElFormRadioGroup": {
+        "src": "components/el-radio-group/index",
+        "isDefault": false
+      },
+      "ElRadio": {
+        "src": "components/el-radio-group/index",
+        "isDefault": false
+      },
+      "ElRadioGroup": {
+        "src": "components/el-radio-group/index",
+        "isDefault": false
+      },
+      "ElRadioGroupPlus": {
+        "src": "components/el-radio-group/index",
+        "isDefault": false
+      },
+      "ElRadioGroupRegister": {
+        "src": "components/el-radio-group/index",
+        "isDefault": false
+      },
+      "ElFormRate": {
+        "src": "components/el-rate/index",
+        "isDefault": false
+      },
+      "ElRate": {
+        "src": "components/el-rate/index",
+        "isDefault": false
+      },
+      "ElRatePlus": {
+        "src": "components/el-rate/index",
+        "isDefault": false
+      },
+      "ElRateRegister": {
+        "src": "components/el-rate/index",
+        "isDefault": false
+      },
+      "ElResult": {
+        "src": "components/el-result/index",
+        "isDefault": false
+      },
+      "ElResultPlus": {
+        "src": "components/el-result/index",
+        "isDefault": false
+      },
+      "ElResultRegister": {
+        "src": "components/el-result/index",
+        "isDefault": false
+      },
+      "ElRouterView": {
+        "src": "components/el-router-view/index",
+        "isDefault": false
+      },
+      "ElRouterViewRegister": {
+        "src": "components/el-router-view/index",
+        "isDefault": false
+      },
+      "ElCol": {
+        "src": "components/el-row/index",
+        "isDefault": false
+      },
+      "ElColPlus": {
+        "src": "components/el-row/index",
+        "isDefault": false
+      },
+      "ElColRegister": {
+        "src": "components/el-row/index",
+        "isDefault": false
+      },
+      "ElRow": {
+        "src": "components/el-row/index",
+        "isDefault": false
+      },
+      "ElRowPlus": {
+        "src": "components/el-row/index",
+        "isDefault": false
+      },
+      "ElScrollbar": {
+        "src": "components/el-scrollbar/index",
+        "isDefault": false
+      },
+      "ElScrollbarPlus": {
+        "src": "components/el-scrollbar/index",
+        "isDefault": false
+      },
+      "ElScrollbarRegister": {
+        "src": "components/el-scrollbar/index",
+        "isDefault": false
+      },
+      "ElFormSelect": {
+        "src": "components/el-select/index",
+        "isDefault": false
+      },
+      "ElOption": {
+        "src": "components/el-select/index",
+        "isDefault": false
+      },
+      "ElSelect": {
+        "src": "components/el-select/index",
+        "isDefault": false
+      },
+      "ElSelectPlus": {
+        "src": "components/el-select/index",
+        "isDefault": false
+      },
+      "ElSelectRegister": {
+        "src": "components/el-select/index",
+        "isDefault": false
+      },
+      "ElFormSlider": {
+        "src": "components/el-slider/index",
+        "isDefault": false
+      },
+      "ElSlider": {
+        "src": "components/el-slider/index",
+        "isDefault": false
+      },
+      "ElSliderPlus": {
+        "src": "components/el-slider/index",
+        "isDefault": false
+      },
+      "ElSliderRegister": {
+        "src": "components/el-slider/index",
+        "isDefault": false
+      },
+      "ElStep": {
+        "src": "components/el-steps/index",
+        "isDefault": false
+      },
+      "ElStepPlus": {
+        "src": "components/el-steps/index",
+        "isDefault": false
+      },
+      "ElStepRegister": {
+        "src": "components/el-steps/index",
+        "isDefault": false
+      },
+      "ElSteps": {
+        "src": "components/el-steps/index",
+        "isDefault": false
+      },
+      "ElStepsPlus": {
+        "src": "components/el-steps/index",
+        "isDefault": false
+      },
+      "ElStepsRegister": {
+        "src": "components/el-steps/index",
+        "isDefault": false
+      },
+      "ElFormSwitch": {
+        "src": "components/el-switch/index",
+        "isDefault": false
+      },
+      "ElSwitch": {
+        "src": "components/el-switch/index",
+        "isDefault": false
+      },
+      "ElSwitchPlus": {
+        "src": "components/el-switch/index",
+        "isDefault": false
+      },
+      "ElSwitchRegister": {
+        "src": "components/el-switch/index",
+        "isDefault": false
+      },
+      "ElTable": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTableColumn": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTableColumnRegister": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTablePlus": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTableRegister": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTableToolBar": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTableToolBarRegister": {
+        "src": "components/el-table/index",
+        "isDefault": false
+      },
+      "ElTabPane": {
+        "src": "components/el-tabs/index",
+        "isDefault": false
+      },
+      "ElTabs": {
+        "src": "components/el-tabs/index",
+        "isDefault": false
+      },
+      "ElTabsPlus": {
+        "src": "components/el-tabs/index",
+        "isDefault": false
+      },
+      "ElTabsRegister": {
+        "src": "components/el-tabs/index",
+        "isDefault": false
+      },
+      "ElCheckTag": {
+        "src": "components/el-tag/index",
+        "isDefault": false
+      },
+      "ElCheckTagPlus": {
+        "src": "components/el-tag/index",
+        "isDefault": false
+      },
+      "ElCheckTagRegister": {
+        "src": "components/el-tag/index",
+        "isDefault": false
+      },
+      "ElTag": {
+        "src": "components/el-tag/index",
+        "isDefault": false
+      },
+      "ElTagPlus": {
+        "src": "components/el-tag/index",
+        "isDefault": false
+      },
+      "ElTagRegister": {
+        "src": "components/el-tag/index",
+        "isDefault": false
+      },
+      "ElPreview": {
+        "src": "components/el-text/index",
+        "isDefault": false
+      },
+      "ElText": {
+        "src": "components/el-text/index",
+        "isDefault": false
+      },
+      "ElTextRegister": {
+        "src": "components/el-text/index",
+        "isDefault": false
+      },
+      "ElFormTimePicker": {
+        "src": "components/el-time-picker/index",
+        "isDefault": false
+      },
+      "ElTimePicker": {
+        "src": "components/el-time-picker/index",
+        "isDefault": false
+      },
+      "ElTimePickerPlus": {
+        "src": "components/el-time-picker/index",
+        "isDefault": false
+      },
+      "ElTimePickerRegister": {
+        "src": "components/el-time-picker/index",
+        "isDefault": false
+      },
+      "ElFormTimeSelect": {
+        "src": "components/el-time-select/index",
+        "isDefault": false
+      },
+      "ElTimeSelect": {
+        "src": "components/el-time-select/index",
+        "isDefault": false
+      },
+      "ElTimeSelectPlus": {
+        "src": "components/el-time-select/index",
+        "isDefault": false
+      },
+      "ElTimeSelectRegister": {
+        "src": "components/el-time-select/index",
+        "isDefault": false
+      },
+      "ElTimeline": {
+        "src": "components/el-timeline/index",
+        "isDefault": false
+      },
+      "ElTimelineItem": {
+        "src": "components/el-timeline/index",
+        "isDefault": false
+      },
+      "ElTimelineItemPlus": {
+        "src": "components/el-timeline/index",
+        "isDefault": false
+      },
+      "ElTimelineItemRegister": {
+        "src": "components/el-timeline/index",
+        "isDefault": false
+      },
+      "ElTimelinePlus": {
+        "src": "components/el-timeline/index",
+        "isDefault": false
+      },
+      "ElTimelineRegister": {
+        "src": "components/el-timeline/index",
+        "isDefault": false
+      },
+      "ElTooltip": {
+        "src": "components/el-tooltip/index",
+        "isDefault": false
+      },
+      "ElTooltipPlus": {
+        "src": "components/el-tooltip/index",
+        "isDefault": false
+      },
+      "ElTooltipRegister": {
+        "src": "components/el-tooltip/index",
+        "isDefault": false
+      },
+      "ElFormTransfer": {
+        "src": "components/el-transfer/index",
+        "isDefault": false
+      },
+      "ElTransfer": {
+        "src": "components/el-transfer/index",
+        "isDefault": false
+      },
+      "ElTransferPlus": {
+        "src": "components/el-transfer/index",
+        "isDefault": false
+      },
+      "ElTransferRegister": {
+        "src": "components/el-transfer/index",
+        "isDefault": false
+      },
+      "ElTree": {
+        "src": "components/el-tree/index",
+        "isDefault": false
+      },
+      "ElTreePlus": {
+        "src": "components/el-tree/index",
+        "isDefault": false
+      },
+      "ElTreeRegister": {
+        "src": "components/el-tree/index",
+        "isDefault": false
+      },
+      "ElFormTreeSelect": {
+        "src": "components/el-tree-select/index",
+        "isDefault": false
+      },
+      "ElTreeSelect": {
+        "src": "components/el-tree-select/index",
+        "isDefault": false
+      },
+      "ElTreeSelectPlus": {
+        "src": "components/el-tree-select/index",
+        "isDefault": false
+      },
+      "ElTreeSelectRegister": {
+        "src": "components/el-tree-select/index",
+        "isDefault": false
+      },
+      "ElFormUpload": {
+        "src": "components/el-upload/index",
+        "isDefault": false
+      },
+      "ElUpload": {
+        "src": "components/el-upload/index",
+        "isDefault": false
+      },
+      "ElUploadPlus": {
+        "src": "components/el-upload/index",
+        "isDefault": false
+      },
+      "ElUploadRegister": {
+        "src": "components/el-upload/index",
+        "isDefault": false
+      },
+      "ElWatermark": {
+        "src": "components/el-watermark/index",
+        "isDefault": false
+      },
+      "ElWatermarkPlus": {
+        "src": "components/el-watermark/index",
+        "isDefault": false
+      },
+      "ElWatermarkRegister": {
+        "src": "components/el-watermark/index",
+        "isDefault": false
       }
     }
   }
