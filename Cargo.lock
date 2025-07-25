@@ -717,6 +717,26 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
+name = "lcap-swc-plugin-import"
+version = "0.0.1"
+dependencies = [
+ "convert_case",
+ "handlebars",
+ "once_cell",
+ "regex",
+ "serde",
+ "serde_json",
+ "swc_atoms",
+ "swc_cached",
+ "swc_common",
+ "swc_core",
+ "swc_ecma_ast",
+ "swc_ecma_utils",
+ "swc_ecma_visit",
+ "swc_plugin_macro",
+]
+
+[[package]]
 name = "libc"
 version = "0.2.174"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1439,26 +1459,6 @@ name = "strsim"
 version = "0.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
-
-[[package]]
-name = "swc-plugin-import-lcap"
-version = "0.0.1"
-dependencies = [
- "convert_case",
- "handlebars",
- "once_cell",
- "regex",
- "serde",
- "serde_json",
- "swc_atoms",
- "swc_cached",
- "swc_common",
- "swc_core",
- "swc_ecma_ast",
- "swc_ecma_utils",
- "swc_ecma_visit",
- "swc_plugin_macro",
-]
 
 [[package]]
 name = "swc_allocator"
