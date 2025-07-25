@@ -1,9 +1,9 @@
-# SWC插件
+# LCAP 组件库按需引入插件（SWC版）
 [![Test](https://github.com/netease-lcap/swc-plugin-import-lcap/actions/workflows/test.yml/badge.svg)](https://github.com/netease-lcap/swc-plugin-import-lcap/actions/workflows/test.yml)
 
 ## 作用
 
-处理低代码组件库的按需引入，当前只处理ImportSpecifier::Named，例如：import { A } from 'package' 会转换为 import A from 'package/{{es}}/{{file}}'
+处理低代码组件库的按需引入
 
 ## 构建
 
@@ -43,4 +43,16 @@ npm pack
         ],
       }
 
+```
+
+## 效果
+
+```js
+// before
+import { ElButton, ElInput, ElSelect } from '@lcap/element-plus';
+
+// after
+import { ElButton } from '@lcap/element-plus/es/button';
+import { ElInput } from '@lcap/element-plus/es/input';
+import { ElSelect } from '@lcap/element-plus/es/select';
 ```

@@ -1,10 +1,8 @@
 use std::{borrow::Cow, collections::HashMap, sync::Arc};
 
-use convert_case::{Case, Casing};
-use handlebars::{Context, Handlebars, Helper, HelperResult, Output, RenderContext};
 use once_cell::sync::Lazy;
 use regex::Regex;
-use serde::{Deserialize, Serialize};
+use serde::Deserialize;
 use swc_atoms::Atom;
 use swc_cached::regex::CachedRegex;
 use swc_common::util::take::Take;
@@ -33,24 +31,6 @@ pub struct PackageConfig {
     pub modules: HashMap<String, ModuleConfig>,
 }
 
-#[derive(Clone, Debug, Deserialize)]
-#[serde(untagged)]
-pub enum Transform {
-    String(String),
-    Vec(Vec<(String, String)>),
-}
-
-impl From<&str> for Transform {
-    fn from(s: &str) -> Self {
-        Transform::String(s.to_string())
-    }
-}
-impl From<Vec<(String, String)>> for Transform {
-    fn from(v: Vec<(String, String)>) -> Self {
-        Transform::Vec(v)
-    }
-}
-
 struct TransformImports<'a> {
     packages: Vec<(CachedRegex, &'a PackageConfig)>,
 }
@@ -58,7 +38,6 @@ struct TransformImports<'a> {
 struct Rewriter<'a> {
     key: &'a str,
     config: &'a PackageConfig,
-    group: Vec<&'a str>,
 }
 
 impl Rewriter<'_> {
@@ -73,7 +52,7 @@ impl Rewriter<'_> {
         let member_config = self.get_config_from_exports(name_str.unwrap_or_default());
 
         let new_path = match member_config {
-            Some(ModuleConfig { src, is_default }) => {
+            Some(ModuleConfig { src, is_default: _ }) => {
                 // package/{{src}}
                 format!("{}/{}/{}", package, self.config.es_dir, src)
             }
@@ -148,17 +127,8 @@ impl TransformImports<'_> {
     fn should_rewrite<'a>(&'a self, name: &'a str) -> Option<Rewriter<'a>> {
         for (regex, config) in &self.packages {
             let group = regex.captures(name);
-            if let Some(group) = group {
-                let group = group
-                    .iter()
-                    .map(|x| x.map(|x| x.as_str()).unwrap_or_default())
-                    .collect::<Vec<&str>>();
-
-                return Some(Rewriter {
-                    key: name,
-                    config,
-                    group,
-                });
+            if let Some(_group) = group {
+                return Some(Rewriter { key: name, config });
             }
         }
         None
