@@ -6,7 +6,7 @@
     "prepack": "pnpm run build",
     "build": "cargo build --release --target wasm32-wasip1 && cp ./target/wasm32-wasip1/release/lcap_swc_plugin_import.wasm .",
     "build:debug": "cargo build --target wasm32-wasip1 && cp ./target/wasm32-wasip1/debug/lcap_swc_plugin_import.wasm .",
-    "pretest": "pnpm run build:debug",
+    "pretest": "pnpm run build",
     "test": "vitest"
   },
   "files": [

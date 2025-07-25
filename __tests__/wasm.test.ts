@@ -4,7 +4,7 @@ import path from "node:path";
 import url from "node:url";
 import fs from "node:fs/promises";
 
-const pluginName = "swc_plugin_import_lcap.wasm";
+const pluginName = "lcap_swc_plugin_import.wasm";
 
 const transformCode = async (
   code: string,
